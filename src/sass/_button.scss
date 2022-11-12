@@ -1,0 +1,19 @@
+.btn {
+  @apply w-fit py-3 px-8 rounded-full font-bold text-primary bg-white cursor-pointer;
+}
+
+.btn-outline {
+  @apply w-fit py-3 px-8 rounded-full font-bold text-white border-[1px] border-white cursor-pointer transition-colors duration-300;
+
+  &:hover {
+   @apply bg-white text-primary transition-colors duration-300;
+  }
+
+  &--primary {
+    @apply border-primary text-primary;
+
+    &:hover {
+      @apply bg-primary text-white;
+    }
+  }
+}

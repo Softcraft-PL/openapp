@@ -1,0 +1,14 @@
+.bg-grey-image {
+  background-position: calc(100% + 280px);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: $resolution-lg) {
+    background-position: right;
+    background-size: initial;
+  }
+
+  @media (min-width: $resolution-xxl) {
+    background-size: cover;
+  }
+}

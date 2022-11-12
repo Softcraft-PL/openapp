@@ -1,0 +1,30 @@
+/*!
+Theme Name: OpenApp
+Theme URI: https://github.com/patrykjankowski/OpenApp
+Author: Patryk Jankowski – Softcraft
+Author URI: https://softcraft.pl
+Description: OpenApp
+Version: 1.0.0
+Text Domain: OpenApp
+*/
+
+
+//styles
+@import "variables";
+@import "base";
+//@import "grid";
+
+@import "button";
+@import "checkbox";
+@import "forms";
+@import "navigation";
+@import "hover-underline-animation";
+@import "arrows";
+@import "checkmark";
+@import "utilities";
+@import "others";
+
+//tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
