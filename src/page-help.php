@@ -14,7 +14,7 @@ $args = array(
 <header class="py-32 xl:pt-40 mt-[-5.625rem] pt-[15.625rem] bg-gradient-image bg-left-bottom-custom lg:bg-cover bg-no-repeat">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-12 lg:col-span-6 flex flex-col justify-center">
+            <div class="col-span-12 lg:col-span-8 flex flex-col justify-center">
                 <h1 class="text-2xl lg:text-3xl font-bold mb-4"><?php echo get_field('help_header_title') ?></h1>
                 <p class="text-2xl lg:text-3xl font-light"><?php echo get_field('help_header_description') ?></p>
             </div>
@@ -26,13 +26,15 @@ $args = array(
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 lg:col-span-4">
-                <?php $topics = new WP_Query($args); ?>
-                <?php if ($topics->have_posts()): ?>
-                    <?php while ($topics->have_posts()): $topics->the_post(); ?>
-                        <a class="block text-md font-light mb-4" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></span></a>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_query(); ?>
+                <div class="border-[1px] border-primary rounded-xl max-w-[280px] pt-8 pb-0 px-8">
+                    <?php $topics = new WP_Query($args); ?>
+                    <?php if ($topics->have_posts()): ?>
+                        <?php while ($topics->have_posts()): $topics->the_post(); ?>
+                            <a class="block text-md font-light mb-4" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></span></a>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_query(); ?>
+                </div>
             </div>
             <div class="col-span-12 lg:col-span-8">
                 <?php while (have_posts()) : the_post(); ?>

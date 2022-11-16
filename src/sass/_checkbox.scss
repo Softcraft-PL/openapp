@@ -1,0 +1,61 @@
+/* custom checkbox styling for contact form 7 checkbox */
+span.wpcf7-list-item {
+  display: inline-block;
+  margin: 0;
+}
+
+
+.wpcf7-list-item-label {
+  position: relative;
+  margin-left: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.wpcf7-list-item {
+  label {
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+input[type=checkbox] {
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  -o-appearance:none;
+  outline: none;
+  content: none;
+  cursor: pointer;
+}
+
+.wpcf7 input[type=checkbox] {
+  border-bottom: none;
+  width: auto;
+}
+
+input[type=checkbox]:before {
+  content: "\2713";
+  color: transparent !important;
+  display: block;
+  border: 1px solid $primary;
+  border-radius: 5px;
+  height: 26px;
+  width: 26px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+}
+
+input[type=checkbox]:checked:before {
+  color: black !important;
+}
+
+#acceptance {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+}
