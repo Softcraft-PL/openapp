@@ -31,7 +31,7 @@ $args = array(
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 lg:col-span-4">
-                <div class="border-[1px] border-primary rounded-xl max-w-[280px] pt-8 pb-0 px-8">
+                <div class="border-[1px] border-primary rounded-xl max-w-[280px] pt-8 pb-4 px-8">
                     <?php $topics = new WP_Query($args); ?>
                     <?php if ($topics->have_posts()): ?>
                         <?php while ($topics->have_posts()): $topics->the_post(); ?>
@@ -41,7 +41,7 @@ $args = array(
                     <?php wp_reset_query(); ?>
                 </div>
             </div>
-            <div class="col-span-12 lg:col-span-8">
+            <div class="col-span-12 lg:col-span-8 wp-content">
                 <?php while (have_posts()) : the_post(); ?>
                     <h1 class="text-xl font-bold text-primary mb-4"><?php the_title(); ?></h1>
                     <div class="text-md font-light"><?php the_content(); ?></div>

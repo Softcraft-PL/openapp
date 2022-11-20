@@ -1,8 +1,8 @@
-<?php /* Template Name: Pomoc */ ?>
+<?php /* Template Name: Pomoc dla sklepu */ ?>
 
 <?php
 $args = array(
-    'post_type' => 'pomoc',
+    'post_type' => 'pomoc-sklep',
     'post_status' => 'publish',
     'orderby' => 'title',
     'order' => 'ASC'

@@ -27,4 +27,22 @@
     border-radius: 30px;
     cursor: pointer;
   }
+
+  .wpcf7-form {
+    &.sent {
+      .wpcf7-response-output {
+        color: $green;
+      }
+    }
+
+    &.invalid, &.unaccepted {
+      .wpcf7-response-output {
+        color: $red;
+      }
+    }
+  }
+
+  .wpcf7-not-valid-tip {
+    color: $red;
+  }
 }

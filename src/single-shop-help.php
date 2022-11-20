@@ -1,8 +1,13 @@
-<?php /* Template Name: Pomoc */ ?>
+<?php
+/*
+  Template Name: Pomoc dla sklepu
+  Template Post Type: pomoc
+*/
+?>
 
 <?php
 $args = array(
-    'post_type' => 'pomoc',
+    'post_type' => 'pomoc-sklep',
     'post_status' => 'publish',
     'orderby' => 'title',
     'order' => 'ASC'
@@ -39,7 +44,7 @@ $args = array(
             <div class="col-span-12 lg:col-span-8 wp-content">
                 <?php while (have_posts()) : the_post(); ?>
                     <h1 class="text-xl font-bold text-primary mb-4"><?php the_title(); ?></h1>
-                    <div class="text-md font-light">Wybierz zagadniene, które Cię interesuje.</div>
+                    <div class="text-md font-light"><?php the_content(); ?></div>
                 <?php endwhile; ?>
             </div>
         </div>

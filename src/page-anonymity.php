@@ -76,7 +76,7 @@
 
             if (fixed) phoneTopPosition = initialPhoneTopPosition;
 
-            if (scrollY >= descriptionElement.getBoundingClientRect().height + descriptionElement.offsetTop - phoneHeight - phoneTopPosition + 77) {
+            if (scrollY >= descriptionElement.getBoundingClientRect().height + descriptionElement.offsetTop - phoneHeight - phoneTopPosition + 32) {
                 fixed = true;
                 document.getElementById("phone").classList.remove("lg:fixed");
                 document.getElementById("phone").classList.add("absolute");
