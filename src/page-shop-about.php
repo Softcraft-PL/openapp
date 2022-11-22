@@ -4,7 +4,7 @@
 
 <div class="absolute top-0 left-0 bg-gradient-image bg-left-top lg:bg-cover bg-no-repeat h-full max-h-[800px] w-full z-[-1]" ></div>
 
-<header class="py-20 lg:py-32 mt-[-5.625rem] pt-[15.625rem] lg:pt-40">
+<header class="py-20 lg:py-32 mt-[-9rem] pt-[15.625rem] lg:pt-40">
     <div class="container mx-auto px-4 h-full">
         <div class="grid grid-cols-12 gap-4 h-full">
             <div class="col-span-12 lg:col-span-6 flex flex-col justify-center">
@@ -44,9 +44,9 @@
         </div>
     </section>
 
-    <section class="py-32">
-        <?php get_template_part("template-parts/shop-upper-footer"); ?>
-    </section>
+    <!--<section class="py-32">
+        <?php /*get_template_part("template-parts/shop-upper-footer"); */?>
+    </section>-->
 </main>
 
 <?php get_footer(); ?>

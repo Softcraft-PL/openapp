@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-    <header class="pb-20 lg:pb-32 min-h-[56.25rem] mt-[-5.625rem] pt-[14.625rem] xl:pt-32 flex flex-col lg:justify-center" style="background-image: linear-gradient(to left top,#62ffff,#00ebff,#00d5ff,#00bdff,#00a3ff,#6599ff,#958df7,#bb7fe8,#dd8dd9,#f0a0d0,#f8b7ce,#f9cfd5)">
+    <header class="pb-20 lg:pb-32 min-h-[56.25rem] mt-[-9rem] pt-[14.625rem] xl:pt-32 flex flex-col lg:justify-center" style="background-image: linear-gradient(to left top,#62ffff,#00ebff,#00d5ff,#00bdff,#00a3ff,#6599ff,#958df7,#bb7fe8,#dd8dd9,#f0a0d0,#f8b7ce,#f9cfd5)">
         <div class="container mx-auto px-4 h-full">
             <div class="grid grid-cols-12 gap-4 h-full">
                 <div class="col-span-12 lg:col-span-6 flex flex-col justify-center">
                     <h1 class="text-2xl lg:text-3xl text-white font-bold mb-2"><?php echo get_field('homepage_header_title') ?></h1>
                     <p class="text-2xl lg:text-3xl text-white font-light"><?php echo get_field('homepage_header_description') ?></p>
-                    <div class="btn-outline lg:text-md mt-8">Pobierz aplikację</div>
+                    <a class="btn-outline lg:text-md mt-8" href="<?php echo get_field('homepage_header_url') ?>"><?php echo get_field('homepage_header_link') ?></a>
                 </div>
                 <div class="col-span-12 lg:col-span-6">
                     <img src="/wp-content/themes/openapp/img/hero.webp" width="716" height="686" alt="aplikacja openapp" class="wmu-preview-img mt-8 lg:mt-0">
@@ -103,7 +103,7 @@
                     <section class="flex flex-col p-8 lg:p-20 rounded-xl min-h-[450px] lg:min-h-[600px] bg-grey bg-screen5 bg-no-repeat bg-right-bottom">
                         <h1 class="text-md lg:text-2xl font-bold text-primary mb-4"><?php echo get_field('homepage_box1_title') ?></h1>
                         <div class="text-sm lg:text-md font-light"><?php echo get_field('homepage_box1_description') ?></div>
-                        <a href="#" class="text-sm lg:text-md text-primary font-bold w-fit mt-4 relative">
+                        <a href="/anonimowosc" class="text-sm lg:text-md text-primary font-bold w-fit mt-4 relative">
                             Dowiedz się więcej
                             <div class="arrow-wrapper arrow-wrapper--box arrow-wrapper--small inline-flex ml-1 mt-8 lg:mt-0 mb-4 lg:absolute top-1.5 right-[-30px]">
                                 <div class="arrow arrow--small arrow--box-right"></div>
@@ -116,7 +116,7 @@
                         <h1 class="text-md lg:text-2xl text-white font-bold mb-4"><?php echo get_field('homepage_box2_title') ?></h1>
                         <div class="text-sm lg:text-md text-white lg:font-light"><?php echo get_field('homepage_box2_description') ?></div>
 
-                        <a href="#" class="text-sm lg:text-md text-white font-bold w-fit mt-4 relative">
+                        <a href="/o-nas" class="text-sm lg:text-md text-white font-bold w-fit mt-4 relative">
                             Dowiedz się więcej
                             <div class="arrow-wrapper arrow-wrapper--white arrow-wrapper--box arrow-wrapper--small inline-flex ml-1 mt-8 lg:mt-0 mb-4 lg:absolute top-1.5 right-[-30px]">
                                 <div class="arrow arrow--white arrow--small arrow--box-right"></div>

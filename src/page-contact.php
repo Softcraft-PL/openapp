@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<header class="py-32 xl:pt-40 mt-[-5.625rem] pt-[15.625rem] bg-gradient-image bg-left-bottom-custom lg:bg-cover bg-no-repeat">
+<header class="py-32 mt-[-9rem] pt-[15.625rem] xl:pt-[14rem] bg-gradient-image bg-left-bottom-custom lg:bg-cover bg-no-repeat">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 lg:col-span-6 flex flex-col justify-center">

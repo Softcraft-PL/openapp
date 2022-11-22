@@ -32,3 +32,29 @@
   width: 1px;
   word-wrap: normal !important;
 }
+
+.calculator {
+  &__input {
+    width: 100px;
+    height: 30px;
+    margin: 0 0 0 auto;
+    padding: 0 5px;
+    border: 1px solid $primary;
+    border-radius: 6px;
+    background: transparent;
+    text-align: right;
+
+    &:disabled {
+      border: none;
+    }
+  }
+
+  &__line {
+    margin: 10px 0;
+    border-bottom: 2px solid $primary;
+
+    &--dotted {
+      border-style: dotted;
+    }
+  }
+}
