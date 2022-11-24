@@ -103,7 +103,7 @@
                     <section class="flex flex-col p-8 lg:p-20 rounded-xl min-h-[450px] lg:min-h-[600px] bg-grey bg-screen5 bg-no-repeat bg-right-bottom">
                         <h1 class="text-md lg:text-2xl font-bold text-primary mb-4"><?php echo get_field('homepage_box1_title') ?></h1>
                         <div class="text-sm lg:text-md font-light"><?php echo get_field('homepage_box1_description') ?></div>
-                        <a href="/anonimowosc" class="text-sm lg:text-md text-primary font-bold w-fit mt-4 relative">
+                        <a href="/dla-klienta/anonimowosc" class="text-sm lg:text-md text-primary font-bold w-fit mt-4 relative">
                             Dowiedz się więcej
                             <div class="arrow-wrapper arrow-wrapper--box arrow-wrapper--small inline-flex ml-1 mt-8 lg:mt-0 mb-4 lg:absolute top-1.5 right-[-30px]">
                                 <div class="arrow arrow--small arrow--box-right"></div>
@@ -116,7 +116,7 @@
                         <h1 class="text-md lg:text-2xl text-white font-bold mb-4"><?php echo get_field('homepage_box2_title') ?></h1>
                         <div class="text-sm lg:text-md text-white lg:font-light"><?php echo get_field('homepage_box2_description') ?></div>
 
-                        <a href="/o-nas" class="text-sm lg:text-md text-white font-bold w-fit mt-4 relative">
+                        <a href="/dla-klienta/o-nas" class="text-sm lg:text-md text-white font-bold w-fit mt-4 relative">
                             Dowiedz się więcej
                             <div class="arrow-wrapper arrow-wrapper--white arrow-wrapper--box arrow-wrapper--small inline-flex ml-1 mt-8 lg:mt-0 mb-4 lg:absolute top-1.5 right-[-30px]">
                                 <div class="arrow arrow--white arrow--small arrow--box-right"></div>

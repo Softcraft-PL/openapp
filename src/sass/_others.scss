@@ -12,10 +12,16 @@
 
   p {
     @apply mb-2;
+    @apply leading-6;
   }
 
   a {
     @apply text-primary;
+  }
+
+  ul {
+    @apply list-disc;
+    @apply ml-8;
   }
 }
 

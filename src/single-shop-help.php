@@ -16,8 +16,10 @@ $args = array(
 
 <?php get_header(); ?>
 
-<header class="py-32 mt-[-9rem] pt-[15.625rem] xl:pt-[14rem] bg-gradient-image bg-left-bottom-custom lg:bg-cover bg-no-repeat">
-    <div class="container mx-auto px-4">
+<header class="py-32 mt-[-6rem] pt-[15.625rem] xl:pt-[14rem] relative">
+    <div class="absolute h-full max-h-[500px] w-full top-0" style="background: linear-gradient(to top, rgb(255, 255, 255) 0%,rgba(255,255,255,0) 70%);"></div>
+    <div class="absolute h-full max-h-[500px] w-full top-0 z-[-1]" style="background-image: linear-gradient(to left top,#62ffff,#00ebff,#00d5ff,#00bdff,#00a3ff,#6599ff,#958df7,#bb7fe8,#dd8dd9,#f0a0d0,#f8b7ce,#f9cfd5);"></div>
+    <div class="container mx-auto px-4 relative">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 lg:col-span-8 flex flex-col justify-center">
                 <h1 class="text-2xl lg:text-3xl font-bold mb-4"><?php echo get_field('help_header_title', 11) ?></h1>

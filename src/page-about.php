@@ -2,10 +2,10 @@
 
 <?php get_header(); ?>
 
-<div class="absolute top-0 left-0 bg-gradient-image bg-left-top lg:bg-cover bg-no-repeat h-full max-h-[800px] w-full z-[-1]" ></div>
-
-<header class="py-32 xl:pt-20">
-    <div class="container mx-auto px-4 h-full">
+<header class="py-32 mt-[-6rem] pt-[15.625rem] xl:pt-[14rem] relative">
+    <div class="absolute h-full max-h-[500px] w-full top-0" style="background: linear-gradient(to top, rgb(255, 255, 255) 0%,rgba(255,255,255,0) 70%);"></div>
+    <div class="absolute h-full max-h-[500px] w-full top-0 z-[-1]" style="background-image: linear-gradient(to left top,#62ffff,#00ebff,#00d5ff,#00bdff,#00a3ff,#6599ff,#958df7,#bb7fe8,#dd8dd9,#f0a0d0,#f8b7ce,#f9cfd5);"></div>
+    <div class="container mx-auto px-4 h-full relative z-10">
         <div class="grid grid-cols-12 gap-4 h-full">
             <div class="col-span-12 lg:col-span-6 flex flex-col justify-center">
                 <h1 class="text-2xl lg:text-3xl font-bold"><?php echo get_field('about_header_title_1'); ?></h1>
