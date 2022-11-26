@@ -51,12 +51,14 @@ function setup() {
     //if (!isset($content_width)) $content_width = 640;
     register_nav_menu('nav-menu',__('Menu główne'));
     register_nav_menu('nav-menu-footer',__('Menu w stopce'));
+    register_nav_menu('nav-menu-help',__('Menu w pomocy dla klienta'));
+    register_nav_menu('nav-menu-shop-help',__('Menu w pomocy dla sklepu'));
 }
 
 
 /* Filter menu classes and ids */
 function nav_menu_attributes_filter($var) {
-    return is_array($var) ? array_intersect($var, array('current_page_item', 'current-menu-ancestor', 'current_page_parent')) : '';
+    return is_array($var) ? array_intersect($var, array('current_page_item', 'current-menu-ancestor', 'current_page_parent', 'current-menu-item')) : '';
 }
 add_filter('nav_menu_css_class', 'nav_menu_attributes_filter', 100, 1);
 add_filter('nav_menu_item_id', 'nav_menu_attributes_filter', 100, 1);

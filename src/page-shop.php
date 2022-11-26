@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<header class="pb-20 lg:pb-32 min-h-[56.25rem] mt-[-9rem] pt-[14.625rem] xl:pt-32 flex flex-col lg:justify-center" style="background-image: linear-gradient(to left top,#62ffff,#00ebff,#00d5ff,#00bdff,#00a3ff,#6599ff,#958df7,#bb7fe8,#dd8dd9,#f0a0d0,#f8b7ce,#f9cfd5)">
+<header class="pb-20 min-h-[56.25rem] mt-[-9rem] pt-[14.625rem] xl:pt-32 flex flex-col lg:justify-center" style="background-image: linear-gradient(to left top,#62ffff,#00ebff,#00d5ff,#00bdff,#00a3ff,#6599ff,#958df7,#bb7fe8,#dd8dd9,#f0a0d0,#f8b7ce,#f9cfd5)">
     <div class="container mx-auto px-4 h-full">
         <div class="grid grid-cols-12 gap-4 h-full">
             <div class="col-span-12 lg:col-span-6 flex flex-col justify-center">
@@ -79,8 +79,8 @@
                     <h1 class="text-md lg:text-2xl text-primary font-bold"><?php echo get_field('shop_s2_title'); ?></h1>
                     <p class="text-md lg:text-2xl text-primary font-light mb-4"><?php echo get_field('shop_s2_description_1'); ?></p>
                     <p class="text-sm lg:text-md font-light mb-4"><?php echo get_field('shop_s2_description_2'); ?></p>
-                    <a href="/dla-sklepu/kontakt" class="text-sm lg:text-md text-primary font-bold w-fit mt-4">
-                        Zostań partnerem
+                    <a href="<?php echo get_field('shop_s2_url'); ?>" class="text-sm lg:text-md text-primary font-bold w-fit mt-4">
+                        <?php echo get_field('shop_s2_link'); ?>
                         <div class="arrow-wrapper arrow-wrapper--box arrow-wrapper--small inline-flex ml-1 mt-8 lg:mt-0 mb-4">
                             <div class="arrow arrow--small arrow--box-right"></div>
                         </div>

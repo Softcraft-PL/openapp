@@ -35,13 +35,7 @@ $args = array(
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 lg:col-span-4">
                     <div class="border-[1px] border-primary rounded-xl max-w-[280px] pt-8 pb-4 px-8">
-                        <?php $topics = new WP_Query($args); ?>
-                        <?php if ($topics->have_posts()): ?>
-                            <?php while ($topics->have_posts()): $topics->the_post(); ?>
-                                <a class="block text-md font-light mb-4" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></span></a>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-                        <?php wp_reset_query(); ?>
+                        <?php wp_nav_menu(array('theme_location' => 'nav-menu-shop-help', 'container' => false)); ?>
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-8 wp-content">
