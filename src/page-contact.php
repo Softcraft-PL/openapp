@@ -20,10 +20,12 @@
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 lg:col-span-6">
                 <h1 class="text-md font-bold mb-4"><?php echo get_field('contact_s1_title_1') ?></h1>
+                <?php if(get_field('config_phone', 24)): ?>
                 <div class="flex items-center mb-2">
                     <svg class="w-[22px] mr-2" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M9.842 11.06c3.99 3.989 4.894-.625 7.434 1.913 2.449 2.448 3.856 2.939.754 6.04-.389.312-2.858 4.07-11.535-4.605-8.678-8.676-4.923-11.147-4.61-11.536 3.11-3.11 3.591-1.694 6.04.754 2.54 2.539-2.072 3.447 1.917 7.435Z" stroke="#6377FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     <a class="leading-[1.2] text-md font-light" href="tel:<?php echo str_replace(" ", "", get_field('config_phone', 24)); ?>"><?php echo get_field('config_phone', 24) ?></a>
                 </div>
+                <?php endif; ?>
                 <div class="flex items-center mb-2">
                     <svg class="w-[22px] mr-2" width="18" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M7.03 2.383a2.245 2.245 0 0 0-3.116-.303L2.181 3.427a2.142 2.142 0 0 0-.72 2.984C1.495 6.466 11 18.353 11 18.353a1.7 1.7 0 0 0 1.309.633l3.639.045.82-3.47c.115-.488 0-1-.316-1.395L7.03 2.383Z" stroke="#6377FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     <a class="block leading-[1.2] text-md font-light" href="mailto:<?php echo get_field('config_email', 24) ?>"><?php echo get_field('config_email', 24) ?></a>

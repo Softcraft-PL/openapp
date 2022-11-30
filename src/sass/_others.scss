@@ -1,7 +1,16 @@
-#acceptance-text {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .2s ease-out;
+.wpcf7-acceptance {
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="checkbox"] {
+    margin: 0;
+  }
+
+  .wpcf7-list-item-label {
+    max-width: calc(100% - 36px);
+  }
 }
 
 .wp-content {
@@ -105,3 +114,6 @@
     }
   }
 }
+
+
+//.w3-animate-fading{animation:fading 2s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}

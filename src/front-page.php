@@ -77,21 +77,26 @@
                 <p class="text-md font-light text-center lg:text-left lg:text-2xl mb-8"><?php echo get_field('homepage_s2_description') ?></p>
                 <div class="grid grid-cols-12 gap-4">
                     <div class="col-span-12 xl:col-span-4">
-                        <div class="py-20 text-md text-center xl:text-left">
+                        <div class="py-10 text-md text-center xl:text-left">
                             <div class="font-bold text-4xl">1</div>
                             <?php echo get_field('homepage_s2_text_1'); ?>
                         </div>
-                        <div class="py-20 text-md text-center xl:text-left">
+                        <div class="py-10 text-md text-center xl:text-left">
                             <div class="font-bold text-4xl">2</div>
                             <?php echo get_field('homepage_s2_text_2'); ?>
                         </div>
-                        <div class="py-20 text-md text-center xl:text-left">
+                        <div class="py-10 text-md text-center xl:text-left">
                             <div class="font-bold text-4xl">3</div>
                             <?php echo get_field('homepage_s2_text_3'); ?>
                         </div>
                     </div>
                     <div class="col-span-12 xl:col-span-8">
-                        <img class="xl:absolute lg:right-0 xl:translate-y-[-50%] xl:top-[50%] w-full max-w-3xl 2xl:max-w-fit" src="/wp-content/themes/openapp/img/screen_10.webp" width="716" height="686" alt="aplikacja openapp – ekrany">
+                        <img class="z-10 h-[538px] xl:h-auto xl:w-[500px] xl:absolute xl:translate-y-[-50%] top-[482px] right-[380px] 2xl:right-[520px] mx-auto xl:mx-0" src="/wp-content/themes/openapp/img/phone.webp" alt="aplikacja openapp – telefon">
+                        <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation1.webp" alt="aplikacja openapp – animacja 1">
+                        <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation2.webp" alt="aplikacja openapp – animacja 2">
+                        <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation3.webp" alt="aplikacja openapp – animacja 3">
+                        <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation4.webp" alt="aplikacja openapp – animacja 4">
+                        <img class="hidden xl:block xl:absolute lg:right-0 xl:translate-y-[-50%] xl:top-[50%] w-full max-w-3xl 2xl:max-w-fit" src="/wp-content/themes/openapp/img/screen_10.webp" width="716" height="686" alt="aplikacja openapp – ekrany">
                     </div>
                 </div>
             </div>
@@ -131,5 +136,22 @@
             <?php get_template_part("template-parts/client-upper-footer"); ?>
         </section>
     </main>
+
+    <script>
+        let slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            let i;
+            let x = document.getElementsByClassName("animation");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.opacity = "0";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.opacity = "1";
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+    </script>
 
 <?php get_footer(); ?>

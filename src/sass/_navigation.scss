@@ -176,6 +176,23 @@
   }
 }
 
+.pomoc-template, .pomoc-sklep-template {
+  .navbar {
+    .help {
+      :after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(1);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        @apply bg-white;
+      }
+    }
+  }
+}
+
 .page-id-15, .parent-pageid-15, .pomoc-sklep-template-single-shop-help{
   .navbar__switcher-button--client {
     @apply text-white border-none bg-none transition-all duration-300;

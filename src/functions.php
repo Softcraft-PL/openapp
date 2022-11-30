@@ -58,7 +58,7 @@ function setup() {
 
 /* Filter menu classes and ids */
 function nav_menu_attributes_filter($var) {
-    return is_array($var) ? array_intersect($var, array('current_page_item', 'current-menu-ancestor', 'current_page_parent', 'current-menu-item')) : '';
+    return is_array($var) ? array_intersect($var, array('current_page_item', 'current-menu-ancestor', 'current_page_parent', 'current-menu-item', 'help')) : '';
 }
 add_filter('nav_menu_css_class', 'nav_menu_attributes_filter', 100, 1);
 add_filter('nav_menu_item_id', 'nav_menu_attributes_filter', 100, 1);

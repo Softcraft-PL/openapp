@@ -34,6 +34,7 @@ $args = array(
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-8 wp-content">
+                    <div class="w-full h-[1px] bg-[#E3E3E3] mb-8"></div>
                     <?php while (have_posts()) : the_post(); ?>
                         <h1 class="text-xl font-bold text-primary mb-4"><?php the_title(); ?></h1>
                         <div class="text-md font-light">Wybierz zagadniene, które Cię interesuje.</div>
