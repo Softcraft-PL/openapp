@@ -77,15 +77,15 @@
                 <p class="text-md font-light text-center lg:text-left lg:text-2xl mb-8"><?php echo get_field('homepage_s2_description') ?></p>
                 <div class="grid grid-cols-12 gap-4">
                     <div class="col-span-12 xl:col-span-4">
-                        <div class="py-10 text-md text-center xl:text-left">
+                        <div class="py-8 text-md text-center xl:text-left">
                             <div class="font-bold text-4xl">1</div>
                             <?php echo get_field('homepage_s2_text_1'); ?>
                         </div>
-                        <div class="py-10 text-md text-center xl:text-left">
+                        <div class="py-8 text-md text-center xl:text-left">
                             <div class="font-bold text-4xl">2</div>
                             <?php echo get_field('homepage_s2_text_2'); ?>
                         </div>
-                        <div class="py-10 text-md text-center xl:text-left">
+                        <div class="py-8 text-md text-center xl:text-left">
                             <div class="font-bold text-4xl">3</div>
                             <?php echo get_field('homepage_s2_text_3'); ?>
                         </div>
@@ -96,7 +96,11 @@
                         <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation2.webp" alt="aplikacja openapp – animacja 2">
                         <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation3.webp" alt="aplikacja openapp – animacja 3">
                         <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation4.webp" alt="aplikacja openapp – animacja 4">
-                        <img class="hidden xl:block xl:absolute lg:right-0 xl:translate-y-[-50%] xl:top-[50%] w-full max-w-3xl 2xl:max-w-fit" src="/wp-content/themes/openapp/img/screen_10.webp" width="716" height="686" alt="aplikacja openapp – ekrany">
+                        <img class="hidden xl:block xl:absolute lg:right-0 xl:translate-y-[-50%] w-full xl:right-[-120px] 2xl:right-0 xl:top-[446px] xl:max-w-fit" src="/wp-content/themes/openapp/img/screen_10.webp" width="716" height="686" alt="aplikacja openapp – ekrany">
+
+                        <div class="cursor hidden xl:block xl:right-[524px] xl:bottom-[371px] 2xl:right-[662px] 2xl:bottom-[345px]"><div class="tap"></div></div>
+                        <div class="cursor hidden z-[-1]"><div class="tap"></div></div>
+                        <div class="cursor hidden xl:block xl:right-[612px] xl:bottom-[228px] 2xl:right-[750px] 2xl:bottom-[201px]"><div class="tap"></div></div>
                     </div>
                 </div>
             </div>
@@ -144,13 +148,25 @@
         function carousel() {
             let i;
             let x = document.getElementsByClassName("animation");
+            let cursor = document.getElementsByClassName("cursor");
+            let tap = document.getElementsByClassName("tap");
             for (i = 0; i < x.length; i++) {
                 x[i].style.opacity = "0";
+                if(cursor[i] && tap[i]) {
+                    cursor[i].style.opacity = "0";
+                    tap[i].style.opacity = "0";
+                    tap[i].classList.remove("tap--1");
+                }
             }
             slideIndex++;
             if (slideIndex > x.length) {slideIndex = 1}
             x[slideIndex-1].style.opacity = "1";
-            setTimeout(carousel, 3000); // Change image every 2 seconds
+            if(cursor[slideIndex-1] && tap[slideIndex-1]) {
+                cursor[slideIndex - 1].style.opacity = "1";
+                tap[slideIndex - 1].style.opacity = "1";
+                tap[slideIndex - 1].classList.add("tap--1");
+            }
+            setTimeout(carousel, 2000); // Change image every 2 seconds
         }
     </script>
 

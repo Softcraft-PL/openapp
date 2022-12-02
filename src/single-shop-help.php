@@ -1,7 +1,7 @@
 <?php
 /*
   Template Name: Pomoc dla sklepu
-  Template Post Type: pomoc
+  Template Post Type: pomoc-sklep
 */
 ?>
 

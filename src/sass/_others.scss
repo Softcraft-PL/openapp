@@ -17,6 +17,12 @@
   h1, h2, h3, h4, h5 {
     @apply mb-2;
     @apply mt-4;
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-md;
+    @apply text-primary;
   }
 
   p {
@@ -113,6 +119,49 @@
       }
     }
   }
+}
+
+
+
+
+.cursor {
+  display: inline-block;
+  background-color: rgba(0,0,0,.2);
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  opacity: 0;
+  transition: all 1500ms;
+  position: absolute;
+  z-index: 11;
+}
+
+.tap {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  z-index: 999;
+  background-color: $primary;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 1
+
+}
+
+.tap--1 {
+  -webkit-animation: tapped--1 500ms;
+  animation: tapped--1 500ms 1;
+  animation-delay: 1600ms;
+}
+
+@-webkit-keyframes tapped--1 {
+  100% { -webkit-transform: scale(2);
+    opacity: 0
+  }
+}
+@keyframes tapped--1 {
+  100% { transform: scale(2);
+    opacity: 0;}
 }
 
 
