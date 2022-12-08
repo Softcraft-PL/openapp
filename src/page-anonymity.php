@@ -36,7 +36,8 @@
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-6 relative">
-                <img src="/wp-content/themes/openapp/img/screen_8.webp" id="phone" class="wmu-preview-img lg:fixed mx-auto lg:ml-auto lg:mr-0 lg:max-w-[472px]" alt="aplikacja openapp – ecommerce">
+<!--                <img src="/wp-content/themes/openapp/img/screen_8.webp" class="wmu-preview-img lg:fixed mx-auto lg:ml-auto lg:mr-0 lg:max-w-[472px]" alt="aplikacja openapp – ecommerce">
+-->                <img src="/wp-content/themes/openapp/img/screen_8.webp" class="wmu-preview-img" alt="aplikacja openapp – ecommerce">
             </div>
         </div>
     </div>

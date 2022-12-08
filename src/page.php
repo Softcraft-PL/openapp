@@ -6,7 +6,8 @@
     <div class="container mx-auto px-4 relative">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 lg:col-span-8 flex flex-col justify-center">
-                <h1 class="text-2xl lg:text-3xl font-bold"><?php the_title(); ?></h1>
+                <h1 class="text-2xl lg:text-3xl font-bold mb-2"><?php the_title(); ?></h1>
+                <p class="text-2xl lg:text-3xl font-light"><?php echo get_field('page_subtitle'); ?></p>
             </div>
         </div>
     </div>
@@ -19,7 +20,7 @@
                 <div class="col-span-12 xl:col-span-8 wp-content">
                 <?php while (have_posts()) : the_post(); ?>
                     <div class="w-full h-[1px] bg-[#E3E3E3] my-8"></div>
-                    <h1 class="font-bold text-md text-primary"><?php the_title(); ?></h1>
+                    <!--<h1 class="font-bold text-md text-primary"><?php /*the_title(); */?></h1>-->
                     <?php the_content(); ?>
                 <?php endwhile; ?>
                 </div>

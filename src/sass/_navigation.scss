@@ -104,6 +104,7 @@
     z-index: 5;
     background: $white;
     border-radius: 50%;
+    margin-left: 20px;
 
     @media (min-width: $resolution-xl) {
       display: none;
@@ -156,14 +157,15 @@
   }
 
   &__switcher {
-    @apply p-1 border-white border-[1px] rounded-md cursor-pointer mr-auto;
+    @apply p-1 rounded-md cursor-pointer;
+    background: linear-gradient(180deg, rgba(132, 100, 235, .7) 0%, rgba(86, 91, 249, .7) 100%);
 
     &--desktop {
-      @apply hidden lg:flex ml-10;
+      @apply hidden lg:flex ml-auto;
     }
 
     &--mobile {
-      @apply flex lg:hidden mt-4 ml-auto;
+      @apply flex lg:hidden mt-4 mx-auto;
     }
 
     &-button {
@@ -187,44 +189,43 @@
         height: 1px;
         bottom: 0;
         left: 0;
-        @apply bg-white;
       }
     }
   }
 }
 
-.page-id-15, .parent-pageid-15, .pomoc-sklep-template-single-shop-help{
+.page-id-15, .parent-pageid-15, .pomoc-sklep-template-single-shop-help {
   .navbar__switcher-button--client {
-    @apply text-white border-none bg-none transition-all duration-300;
+    @apply text-white border-none transition-all duration-300;
 
     &:hover {
-      @apply bg-white rounded-md text-primary transition-all duration-300;
+      @apply rounded-md transition-all duration-300;
     }
   }
 
   .navbar__switcher-button--shop {
-    @apply text-primary font-bold border-white border-[1px] rounded-md bg-white transition-all duration-300;
+    @apply font-bold rounded-md transition-all duration-300;
 
     &:hover {
-      @apply bg-white rounded-md text-primary transition-all duration-300;
+      @apply rounded-md transition-all duration-300;
     }
   }
 }
 
 .parent-pageid-24, .home, .pomoc-template-single-help {
   .navbar__switcher-button--client {
-    @apply text-primary font-bold border-white border-[1px] rounded-md bg-white transition-all duration-300;
+    @apply font-bold rounded-md transition-all duration-300;
 
     &:hover {
-      @apply bg-white rounded-md text-primary transition-all duration-300;
+      @apply rounded-md transition-all duration-300;
     }
   }
 
   .navbar__switcher-button--shop {
-    @apply text-white border-none bg-none transition-all duration-300;
+    @apply text-white transition-all duration-300;
 
     &:hover {
-      @apply bg-white rounded-md text-primary transition-all duration-300;
+      @apply rounded-md transition-all duration-300;
     }
   }
 }

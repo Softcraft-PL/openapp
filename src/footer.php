@@ -10,8 +10,13 @@
             </div>
             <div class="col-span-12 lg:col-span-3 2xl:col-span-2 mt-4">
                 <h2 class="font-bold lg:mb-6"><?php echo get_field('footer_contact', 24) ?></h2>
+                <?php if(get_field('config_phone', 24)): ?>
                 <a href="tel:<?php echo str_replace(" ", "", get_field('config_phone', 24)); ?>"><?php echo get_field('config_phone', 24) ?></a>
+                <?php endif; ?>
                 <p><a href="mailto:<?php echo get_field('config_email', 24) ?>"><?php echo get_field('config_email', 24) ?></a></p>
+                <a href="<?php echo get_field('config_linkedin', 24) ?>" target="_blank" class="inline-block mt-3" aria-label="Linkt to LinkedIn">
+                    <svg width="33" height="34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.071.83H3.93A3.93 3.93 0 0 0 0 4.757V29.9a3.93 3.93 0 0 0 3.929 3.93H29.07A3.93 3.93 0 0 0 33 29.9V4.759A3.93 3.93 0 0 0 29.071.829ZM10.214 13.4v14.93H5.5V13.4h4.714ZM5.5 9.056c0-1.1.943-1.941 2.357-1.941 1.414 0 2.302.84 2.357 1.94 0 1.1-.88 1.988-2.357 1.988-1.414 0-2.357-.887-2.357-1.987Zm22 19.273h-4.714v-7.857c0-1.572-.786-3.143-2.75-3.174h-.063c-1.902 0-2.687 1.618-2.687 3.174v7.857H12.57V13.4h4.715v2.012S18.802 13.4 21.85 13.4c3.119 0 5.649 2.146 5.649 6.49v8.44Z" fill="#fff"/></svg>
+                </a>
             </div>
             <div class="col-span-12 lg:col-span-3 2xl:col-span-2 mt-4">
                 <h2 class="font-bold lg:mb-6"><?php echo get_field('footer_address', 24) ?></h2>

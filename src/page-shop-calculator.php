@@ -24,7 +24,7 @@
                         <h2 class="text-lg text-primary font-bold min-h-[52px] flex items-center mb-2">Aktualne dane sklepu</h2>
                         <p class="text-md mb-8 min-h-[43px]">Wprowadź parametry swojego sklepu, aby oszacować korzyści z wdrożenia checkoutu OpenApp</p>
 
-                        <div class="flex items-center mt-[107px] mb-[106px]">
+                        <div class="flex items-center mb-8">
                             <label for="orders" class="text-md">Miesięczna liczba zamówień</label>
                             <input type="text" class="calculator__input text-md" id="input-0" value="10000">
                             <span class="w-[24px] ml-2">szt.</span>
@@ -37,7 +37,7 @@
                            </div>
                         </div>
 
-                        <div class="flex items-center mb-8">
+                        <div class="flex items-center mb-8 hidden">
                             <label for="cart" class="text-md">Średnia wartość koszyka</label>
                             <input type="text" class="calculator__input text-md" id="input-1" value="250">
                             <span class="w-[24px] ml-2">zł</span>
@@ -58,7 +58,7 @@
 
 
 
-                        <div class="flex items-center mb-8">
+                        <div class="flex items-center mb-8 hidden">
                             <label for="cart" class="text-md">Średnia prowizja za płatność</label>
                             <input type="text" class="calculator__input text-md" id="input-3" value="1.15">
                             <span class="w-[24px] ml-2">%</span>
@@ -84,7 +84,7 @@
 
 
 
-                        <div class="flex items-center mb-8">
+                        <div class="flex items-center mb-8 hidden">
                             <label for="orders" class="text-md">Wzrost wartości koszyka</label>
                             <input type="text" class="calculator__input text-md" id="input-8" value="0">
                             <span class="w-[24px] ml-2">%</span>
@@ -92,7 +92,7 @@
 
 
 
-                        <div class="flex items-center mb-8">
+                        <div class="flex items-center mb-8 hidden">
                             <label for="cart" class="text-md font-weight-700">Średnia wartość koszyka po wdrożeniu OpenApp</label>
                             <input disabled type="text" class="calculator__input text-md font-bold" id="input-13" value="200" readonly disabled>
                             <span class="w-[24px] ml-2">5 zł</span>
@@ -108,7 +108,7 @@
 
 
 
-                        <div class="flex items-center mb-8">
+                        <div class="flex items-center mb-8 hidden">
                             <label for="cart" class="text-md font-weight-700">Średnia prowizja za płatność z uwzględnieniem prowizji OpenApp</label>
                             <input disabled type="text" class="calculator__input text-md font-bold" id="input-11" value="0.49" readonly disabled>
                             <span class="w-[24px] ml-2">%</span>
@@ -176,7 +176,7 @@
 
                         <div class="calculator__line calculator__line--dotted mt-4"></div>
 
-                        <div class="grid grid-cols-12 gap-4">
+                        <div class="grid grid-cols-12 gap-4 hidden">
                             <div class="col-span-12 xl:col-span-6">
                                 <label for="cart" class="text-md width-500">Marża sklepu po koszcie płatności i transakcji (w tym OpenApp)</label>
                             </div>

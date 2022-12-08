@@ -79,28 +79,28 @@
                     <div class="col-span-12 xl:col-span-4">
                         <div class="py-8 text-md text-center xl:text-left">
                             <div class="font-bold text-4xl">1</div>
-                            <?php echo get_field('homepage_s2_text_1'); ?>
+                            <div class="font-light xl:max-w-[350px]"><?php echo get_field('homepage_s2_text_1'); ?></div>
                         </div>
                         <div class="py-8 text-md text-center xl:text-left">
                             <div class="font-bold text-4xl">2</div>
-                            <?php echo get_field('homepage_s2_text_2'); ?>
+                            <div class="font-light xl:max-w-[350px]"><?php echo get_field('homepage_s2_text_2'); ?></div>
                         </div>
                         <div class="py-8 text-md text-center xl:text-left">
                             <div class="font-bold text-4xl">3</div>
-                            <?php echo get_field('homepage_s2_text_3'); ?>
+                            <div class="font-light xl:max-w-[350px]"><?php echo get_field('homepage_s2_text_3'); ?></div>
                         </div>
                     </div>
                     <div class="col-span-12 xl:col-span-8">
-                        <img class="z-10 h-[538px] xl:h-auto xl:w-[500px] xl:absolute xl:translate-y-[-50%] top-[482px] right-[380px] 2xl:right-[520px] mx-auto xl:mx-0" src="/wp-content/themes/openapp/img/phone.webp" alt="aplikacja openapp – telefon">
-                        <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation1.webp" alt="aplikacja openapp – animacja 1">
-                        <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation2.webp" alt="aplikacja openapp – animacja 2">
-                        <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation3.webp" alt="aplikacja openapp – animacja 3">
-                        <img style="transition: opacity 1s;" class="animation absolute z-10 xl:translate-y-[-50%] h-[538px] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation4.webp" alt="aplikacja openapp – animacja 4">
-                        <img class="hidden xl:block xl:absolute lg:right-0 xl:translate-y-[-50%] w-full xl:right-[-120px] 2xl:right-0 xl:top-[446px] xl:max-w-fit" src="/wp-content/themes/openapp/img/screen_10.webp" width="716" height="686" alt="aplikacja openapp – ekrany">
+                        <img width="500" height="656" class="z-10 xl:h-auto xl:w-[500px] xl:absolute xl:translate-y-[-50%] top-[482px] right-[380px] 2xl:right-[520px] mx-auto xl:mx-0" src="/wp-content/themes/openapp/img/phone.webp" alt="aplikacja openapp – telefon">
+                        <img width="500" height="656" style="transition: opacity 1s;" class="animation absolute px-[15px] xl:px-0 max-h-[656px] z-10 xl:translate-y-[-50%] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation1.webp" alt="aplikacja openapp – animacja 1">
+                        <img width="500" height="656" style="transition: opacity 1s;" class="animation absolute px-[15px] xl:px-0 max-h-[656px] z-10 xl:translate-y-[-50%] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation2.webp" alt="aplikacja openapp – animacja 2">
+                        <img width="500" height="656" style="transition: opacity 1s;" class="animation absolute px-[15px] xl:px-0 max-h-[656px] z-10 xl:translate-y-[-50%] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation3.webp" alt="aplikacja openapp – animacja 3">
+                        <img width="500" height="656" style="transition: opacity 1s;" class="animation absolute px-[15px] xl:px-0 max-h-[656px] z-10 xl:translate-y-[-50%] xl:h-auto xl:w-[500px] w-auto bottom-[80px] lg:bottom-[128px] xl:bottom-[initial] xl:top-[482px] translate-x-[-50%] left-[50%] xl:left-[initial] xl:right-[130px] 2xl:right-[270px]" src="/wp-content/themes/openapp/img/animation4.webp" alt="aplikacja openapp – animacja 4">
+                        <img width="830" height="748" class="hidden xl:block xl:absolute lg:right-0 xl:translate-y-[-50%] w-full xl:right-[-120px] 2xl:right-0 xl:top-[446px] xl:max-w-fit" src="/wp-content/themes/openapp/img/screen_10.webp" width="716" height="686" alt="aplikacja openapp – ekrany">
 
-                        <div class="cursor hidden xl:block xl:right-[524px] xl:bottom-[371px] 2xl:right-[662px] 2xl:bottom-[345px]"><div class="tap"></div></div>
+                        <div class="cursor hidden xl:block xl:right-[524px] xl:bottom-[371px] 2xl:right-[662px] 2xl:bottom-[372px]"><div class="tap"></div></div>
                         <div class="cursor hidden z-[-1]"><div class="tap"></div></div>
-                        <div class="cursor hidden xl:block xl:right-[612px] xl:bottom-[228px] 2xl:right-[750px] 2xl:bottom-[201px]"><div class="tap"></div></div>
+                        <div class="cursor hidden xl:block xl:right-[612px] xl:bottom-[228px] 2xl:right-[750px] 2xl:bottom-[228px]"><div class="tap"></div></div>
                     </div>
                 </div>
             </div>
@@ -109,25 +109,25 @@
         <div class="container mx-auto px-4 py-20 lg:py-32">
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 lg:col-span-6">
-                    <section class="flex flex-col p-8 lg:p-20 rounded-xl min-h-[450px] lg:min-h-[600px] bg-grey bg-screen5 bg-no-repeat bg-right-bottom">
+                    <section class="flex flex-col p-8 lg:p-20 rounded-xl min-h-[450px] lg:min-h-[576px] 2xl:min-h-[600px] bg-grey bg-screen5 bg-contain bg-no-repeat bg-right-bottom">
                         <h1 class="text-md lg:text-2xl font-bold text-primary mb-4"><?php echo get_field('homepage_box1_title') ?></h1>
-                        <div class="text-sm lg:text-md font-light"><?php echo get_field('homepage_box1_description') ?></div>
-                        <a href="/dla-klienta/anonimowosc" class="text-sm lg:text-md text-primary font-bold w-fit mt-4 relative">
+                        <div class="text-sm lg:text-md 2xl:text-lg font-light"><?php echo get_field('homepage_box1_description') ?></div>
+                        <a href="/dla-klienta/anonimowosc" class="text-sm lg:text-md 2xl:text-lg text-primary font-bold w-fit mt-4 relative">
                             Dowiedz się więcej
-                            <div class="arrow-wrapper arrow-wrapper--box arrow-wrapper--small inline-flex ml-1 mt-8 lg:mt-0 mb-4 lg:absolute top-1.5 right-[-30px]">
+                            <div class="arrow-wrapper arrow-wrapper--box arrow-wrapper--small inline-flex ml-1 mt-8 mb-4 lg:absolute top-1.5 right-[-30px] md:mt-[-1px] 2xl:mt-[3px]">
                                 <div class="arrow arrow--small arrow--box-right"></div>
                             </div>
                         </a>
                     </section>
                 </div>
                 <div class="col-span-12 lg:col-span-6">
-                    <section class="flex flex-col p-8 lg:p-20 rounded-xl min-h-[450px] lg:min-h-[600px] bg-about bg-no-repeat bg-cover">
+                    <section class="flex flex-col p-8 lg:p-20 rounded-xl min-h-[450px] lg:min-h-[576px] 2xl:min-h-[600px] bg-about bg-no-repeat bg-cover">
                         <h1 class="text-md lg:text-2xl text-white font-bold mb-4"><?php echo get_field('homepage_box2_title') ?></h1>
-                        <div class="text-sm lg:text-md text-white lg:font-light"><?php echo get_field('homepage_box2_description') ?></div>
+                        <div class="text-sm lg:text-md 2xl:text-lg text-white lg:font-light"><?php echo get_field('homepage_box2_description') ?></div>
 
-                        <a href="/dla-klienta/o-nas" class="text-sm lg:text-md text-white font-bold w-fit mt-4 relative">
+                        <a href="/dla-klienta/o-nas" class="text-sm lg:text-md 2xl:text-lg text-white font-bold w-fit mt-4 relative">
                             Dowiedz się więcej
-                            <div class="arrow-wrapper arrow-wrapper--white arrow-wrapper--box arrow-wrapper--small inline-flex ml-1 mt-8 lg:mt-0 mb-4 lg:absolute top-1.5 right-[-30px]">
+                            <div class="arrow-wrapper arrow-wrapper--white arrow-wrapper--box arrow-wrapper--small inline-flex ml-1 mt-8 mb-4 lg:absolute top-1.5 right-[-30px] md:mt-[-1px] 2xl:mt-[3px]">
                                 <div class="arrow arrow--white arrow--small arrow--box-right"></div>
                             </div>
                         </a>

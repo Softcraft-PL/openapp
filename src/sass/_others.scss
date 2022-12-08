@@ -21,7 +21,7 @@
   }
 
   h1 {
-    @apply text-md;
+    @apply text-lg;
     @apply text-primary;
   }
 
@@ -37,6 +37,21 @@
   ul {
     @apply list-disc;
     @apply ml-8;
+    @apply mb-2;
+  }
+
+  ol li {
+    @apply list-decimal;
+    @apply mb-2;
+    margin-left: 14px;
+  }
+
+  ol > li > ul > li {
+    list-style: lower-latin;
+  }
+
+  li ul {
+    @apply mt-2;
   }
 }
 
