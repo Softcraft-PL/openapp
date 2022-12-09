@@ -45,9 +45,9 @@
         </div>
     </section>
 
-    <!--<section class="py-32">
-        <?php /*get_template_part("template-parts/shop-upper-footer"); */?>
-    </section>-->
+    <section class="py-32">
+        <?php get_template_part("template-parts/shop-upper-footer"); ?>
+    </section>
 </main>
 
 <?php get_footer(); ?>

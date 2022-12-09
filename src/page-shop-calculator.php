@@ -206,9 +206,9 @@
         </div>
     </section>
 
-    <!--<section class="py-20 lg:py-32">
-        <?php /*get_template_part("template-parts/shop-upper-footer"); */?>
-    </section>-->
+    <section class="pb-20 lg:pb-32">
+        <?php get_template_part("template-parts/shop-upper-footer"); ?>
+    </section>
 </main>
 
 <script type="text/javascript">
