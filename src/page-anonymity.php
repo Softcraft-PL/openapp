@@ -58,43 +58,4 @@
     </section>
 </main>
 
-<script>
-    let boxPosition;
-    let phonePosition;
-    let fixed = false;
-    let initialPhoneTopPosition = document.getElementById("phone").offsetTop;
-
-    window.addEventListener('load', (event) => {
-        boxPosition = getBoxPosition(document.getElementById("box"));
-    });
-
-    window.addEventListener('scroll', () => {
-        if(window.matchMedia("(min-width: 992px)").matches) {
-            let phoneElement = document.getElementById("phone");
-            let descriptionElement = document.getElementById("description");
-            let phoneHeight = phoneElement.naturalHeight;
-            let phoneTopPosition = phoneElement.offsetTop;
-
-            if (fixed) phoneTopPosition = initialPhoneTopPosition;
-
-            if (scrollY >= descriptionElement.getBoundingClientRect().height + descriptionElement.offsetTop - phoneHeight - phoneTopPosition + 32) {
-                fixed = true;
-                document.getElementById("phone").classList.remove("lg:fixed");
-                document.getElementById("phone").classList.add("absolute");
-                document.getElementById("phone").classList.add("bottom-0");
-            } else {
-                fixed = false;
-                document.getElementById("phone").classList.add("lg:fixed");
-                document.getElementById("phone").classList.remove("absolute");
-                document.getElementById("phone").classList.remove("bottom-0");
-            }
-        }
-    });
-
-    function getBoxPosition(element) {
-        return element.getBoundingClientRect().top + window.scrollX;
-    }
-
-</script>
-
 <?php get_footer(); ?>
