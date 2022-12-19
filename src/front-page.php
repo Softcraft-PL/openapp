@@ -15,7 +15,11 @@
                     <a class="btn-outline lg:text-md mt-8" href="<?php echo get_field('homepage_header_url') ?>"><?php echo get_field('homepage_header_link') ?></a>
                 </div>
                 <div class="col-span-12 lg:col-span-6">
+                    <?php if(get_field('homepage_header_img')['url']): ?>
+                    <img src="<?php echo get_field('homepage_header_img')['url']; ?>" width="716" height="686" alt="aplikacja openapp" class="wmu-preview-img mt-8 lg:mt-0">
+                    <?php else: ?>
                     <img src="/wp-content/themes/openapp/img/hero.webp" width="716" height="686" alt="aplikacja openapp" class="wmu-preview-img mt-8 lg:mt-0">
+                    <?php endif ?>
                 </div>
             </div>
         </div>
@@ -38,7 +42,11 @@
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-6">
+                        <?php if(get_field('homepage_s1_img_1')['url']): ?>
+                        <img src="<?php echo get_field('homepage_s1_img_1')['url'] ?>" width="716" height="686" alt="aplikacja openapp – ekran 1">
+                        <?php else: ?>
                         <img src="/wp-content/themes/openapp/img/screen_1.webp" width="716" height="686" alt="aplikacja openapp – ekran 1">
+                        <?php endif ?>
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-4">
@@ -49,7 +57,11 @@
                         <h2 class="text-md font-bold text-center lg:text-left lg:text-2xl"><?php echo get_field('homepage_s1_image_title_2') ?></h2>
                     </div>
                     <div class="col-span-12 lg:col-span-6 lg:row-start-1">
+                        <?php if(get_field('homepage_s1_img_2')['url']): ?>
+                        <img src="<?php echo get_field('homepage_s1_img_2')['url'] ?>" width="716" height="686" alt="aplikacja openapp – ekran 2">
+                        <?php else: ?>
                         <img src="/wp-content/themes/openapp/img/screen_2.webp" width="716" height="686" alt="aplikacja openapp – ekran 2">
+                        <?php endif ?>
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-4">
@@ -60,7 +72,11 @@
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-6">
-                        <img src="/wp-content/themes/openapp/img/screen_3.webp" width="716" height="686" alt="" alt="aplikacja openapp – ekran 3">
+                        <?php if(get_field('homepage_s1_img_3')['url']): ?>
+                        <img src="<?php echo get_field('homepage_s1_img_3')['url'] ?>" width="716" height="686" alt="aplikacja openapp – ekran 3">
+                        <?php else: ?>
+                        <img src="/wp-content/themes/openapp/img/screen_3.webp" width="716" height="686" alt="aplikacja openapp – ekran 3">
+                        <?php endif ?>
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-4">
@@ -71,7 +87,11 @@
                         <h2 class="text-md font-bold text-center lg:text-left lg:text-2xl"><?php echo get_field('homepage_s1_image_title_4') ?></h2>
                     </div>
                     <div class="col-span-12 lg:col-span-6 lg:row-start-1">
+                        <?php if(get_field('homepage_s1_img_4')['url']): ?>
+                        <img src="<?php echo get_field('homepage_s1_img_4')['url'] ?>" width="716" height="686" alt="aplikacja openapp – ekran 4">
+                        <?php else: ?>
                         <img src="/wp-content/themes/openapp/img/screen_4.webp" width="716" height="686" alt="aplikacja openapp – ekran 4">
+                        <?php endif ?>
                     </div>
                 </div>
             </div>

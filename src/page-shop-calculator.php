@@ -24,7 +24,7 @@
                         <h2 class="text-lg text-primary font-bold min-h-[52px] flex items-center mb-2">Aktualne dane sklepu</h2>
                         <p class="text-md mb-8 min-h-[43px]">Wprowadź parametry swojego sklepu, aby oszacować korzyści z wdrożenia checkoutu OpenApp</p>
 
-                        <div class="flex items-center mb-8">
+                        <div class="flex items-center xl:mt-[107px] mb-8 xl:mb-[43px]">
                             <label for="orders" class="text-md">Miesięczna liczba zamówień</label>
                             <input type="text" class="calculator__input text-md" id="input-0" value="10000">
                             <span class="w-[24px] ml-2">szt.</span>
