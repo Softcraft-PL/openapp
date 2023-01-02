@@ -11,7 +11,6 @@
                 <h1 class="text-2xl lg:text-3xl font-bold"><?php echo get_field('anonymity_header_title') ?></h1>
                 <p class="text-2xl lg:text-3xl font-bold text-green mt-4"><?php echo get_field('anonymity_header_description_1') ?></p>
                 <p class="text-md lg:text-lg font-light mb-12 mt-4"><?php echo get_field('anonymity_header_description_2') ?></p>
-                <svg class="scale-75 lg:scale-100 mx-auto lg:ml-2 lg:mr-0 lg:mt-8 lg:mb-10" width="40" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.554 28.826 20 46.272l17.446-17.446M20 2.873v43.4" stroke="#32D64A" stroke-width="4" stroke-linecap="round"/></svg>
                 <div class="flex flex-col items-center lg:items-start mt-8 mb-12">
                     <div class="w-16 min-w-[64px] h-16 flex items-center justify-center rounded-full border-green border-2 lg:mr-8 mb-4 lg:mb-0"><span class="checkmark"></span></div>
                     <h2 class="text-xl lg:text-lg text-green text-center lg:text-left mt-4 mb-4"><?php echo get_field('anonymity_header_box1_header') ?></h2>

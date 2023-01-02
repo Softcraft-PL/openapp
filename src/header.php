@@ -47,8 +47,8 @@
         </a>
 
         <div class="navbar__switcher navbar__switcher--desktop">
-            <a href="/" class="navbar__switcher-button navbar__switcher-button--client">Dla klienta</a>
-            <a href="/dla-sklepu/" class="navbar__switcher-button navbar__switcher-button--shop">Dla sklepu</a>
+            <a href="/" class="navbar__switcher-button navbar__switcher-button--client">Aplikacja</a>
+            <a href="/dla-sklepu/" class="navbar__switcher-button navbar__switcher-button--shop">Sklep</a>
         </div>
 
         <div class="navbar__nav-desktop hover-underline-animation">
