@@ -35,8 +35,11 @@
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-6 relative">
-<!--                <img src="/wp-content/themes/openapp/img/screen_8.webp" class="wmu-preview-img lg:fixed mx-auto lg:ml-auto lg:mr-0 lg:max-w-[472px]" alt="aplikacja openapp – ecommerce">
--->                <img src="/wp-content/themes/openapp/img/screen_8.webp" class="wmu-preview-img" alt="aplikacja openapp – ecommerce">
+                <?php if(get_field('anonymity_header_img')['url']): ?>
+                    <img src="<?php echo get_field('anonymity_header_img')['url']; ?>" class="wmu-preview-img" alt="aplikacja openapp – ecommerce">
+                    <?php else: ?>
+                    <img src="/wp-content/themes/openapp/img/screen_8.webp" class="wmu-preview-img" alt="aplikacja openapp – ecommerce">
+                <?php endif ?>
             </div>
         </div>
     </div>

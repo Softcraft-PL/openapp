@@ -24,7 +24,11 @@
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-6">
-                <img src="/wp-content/themes/openapp/img/screen_7.webp" class="wmu-preview-img ml-auto" alt="aplikacja openapp – ecommerce">
+                <?php if(get_field('about_header_img')['url']): ?>
+                    <img src="<?php echo get_field('about_header_img')['url']; ?>" class="wmu-preview-img ml-auto" alt="aplikacja openapp – ecommerce">
+                    <?php else: ?>
+                    <img src="/wp-content/themes/openapp/img/screen_7.webp" class="wmu-preview-img ml-auto" alt="aplikacja openapp – ecommerce">
+                <?php endif ?>
             </div>
         </div>
     </div>

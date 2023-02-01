@@ -5,7 +5,7 @@
   padding: 2rem;
   background-color: #F9F9F9;
 
-  input {
+  input, textarea {
     margin-bottom: 1rem;
     padding: 10px 0;
     border-bottom: 1px solid $primary;
@@ -43,6 +43,8 @@
   }
 
   .wpcf7-not-valid-tip {
+    position: relative;
+    top: -12px;
     color: $red;
   }
 }
